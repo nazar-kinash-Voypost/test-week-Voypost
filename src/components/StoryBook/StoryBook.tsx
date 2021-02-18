@@ -1,8 +1,8 @@
 import React from "react";
 import { Box } from "@material-ui/core";
-import Btn from "./Btn/Btn";
-import Field from "./Fild/Field";
-import Text from "./Text/Text";
+import Btn from "../Btn/Btn";
+import Field from "../Fild/Field";
+import Text from "../Text/Text";
 
 const StoryBook = () => {
   return (
