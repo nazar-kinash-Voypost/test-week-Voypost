@@ -25,7 +25,33 @@ const StoryBook = () => {
         </Box>
       </Box>
       <Box m="10px" display="flex" flexDirection="column">
-        <Field variant="outlined" labelText="full name" />
+        <Field
+          name="fullName"
+          variant="outlined"
+          labelText="Full name"
+          placeholder="placeholder"
+          color="primary"
+          helperText=""
+          error={false}
+        />
+        <Field
+          name="emailFddres"
+          variant="outlined"
+          labelText="Email addres"
+          placeholder="placeholder"
+          color="primary"
+          helperText=""
+          error={false}
+        />
+        <Field
+          name="password"
+          variant="outlined"
+          labelText="Password(8 characters)"
+          placeholder="placeholder"
+          color="primary"
+          helperText="Please input your password! The password must be at least 8 characters!"
+          error={true}
+        />
       </Box>
       <Box>
         <Text variant="h1" component="h1" content="Typography"></Text>

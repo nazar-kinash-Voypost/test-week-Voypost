@@ -9,16 +9,26 @@ const colors = {
 const theme = createMuiTheme({
   overrides: {
     MuiButton: {
-      root: { margin: "6px", width: "133px", height: "50px", boxShadow: "" },
+      root: { margin: "6px", width: "133px", height: "50px" },
+      contained: {
+        boxShadow: "none",
+      },
       sizeSmall: { width: "120px", height: "40px" },
       sizeLarge: { width: "270px", height: "50px" },
     },
     MuiTextField: {
       root: {
         width: "550px",
+        marginTop: "40px",
+        caretColor: colors.primary,
+      },
+    },
+    MuiInputBase: {
+      input: {
         backgroundColor: colors.backgroundFieldColor,
       },
     },
+
     MuiTypography: {
       root: {
         padding: "12px",
